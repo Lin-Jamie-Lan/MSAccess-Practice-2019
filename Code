@@ -44,3 +44,17 @@ WHERE BN =
       where BN <> '$ bn'
 
 );
+
+
+
+Select the name,capital, population (in billions with '$' in starting and 'bn' at end) and continent
+Select the 3rd most populated country from the list
+find the max in each continent
+what will be each country's population in 2019 ?
+Find the list of countries which do not have the capitals listed
+Count how many times each country is listed
+select the countries which are above the average population of all the countries
+select the distinct rows and distinct ids from table 5
+Create two column, Name and Managed By.
+Union table 1 and 4 and see the difference
+Create a new column 'CalField' where is country is from Asia, then population *1.5, any other continent population devided by 1.5
