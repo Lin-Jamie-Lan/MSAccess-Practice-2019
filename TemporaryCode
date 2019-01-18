@@ -1,0 +1,47 @@
+/* Question: Select the 3rd most populated country from the list*/
+
+/* Step 1 */
+Answer2aa
+
+SELECT *
+FROM Answer1Join
+
+
+where BN <>
+
+    (SELECT
+      max(BN)
+      from Answer1Join
+      where BN <> '$ bn'
+
+)
+;
+
+/* Step 2 */
+Answer2ab
+SELECT *
+FROM Answer2aa
+
+
+where BN <>
+
+    (SELECT
+      max(BN)
+      from Answer2aa
+      where BN <> '$ bn'
+
+)
+;
+
+/* Step 3 */
+Answer2ac
+SELECT *
+FROM Answer2ab
+WHERE BN =
+
+    (SELECT
+      max(BN)
+      from Answer2ab
+      where BN <> '$ bn'
+
+);
